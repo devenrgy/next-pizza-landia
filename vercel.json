@@ -1,9 +1,9 @@
 {
+  "trailingSlash": true,
   "rewrites": [
     {
       "source": "/",
-      "destination": "/all",
-      "trailingSlash": true
+      "destination": "/all"
     }
   ]
 }
