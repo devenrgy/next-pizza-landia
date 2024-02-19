@@ -2,7 +2,7 @@
   "trailingSlash": true,
   "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "destination": "/all"
     }
   ]
