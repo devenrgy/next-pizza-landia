@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Suspense } from 'react';
+
 import { CartButton } from '@/components/cart-button';
 import { ModeToggle } from '@/components/mode-toggle';
 import { SearchForm } from '@/components/search-form';
@@ -27,7 +29,9 @@ export default function Header() {
       </Link>
 
       <div className='flex-grow'>
-        <SearchForm />
+        <Suspense>
+          <SearchForm />
+        </Suspense>
       </div>
 
       <div className='flex flex-grow items-center justify-between gap-x-5 sm:ml-auto sm:flex-grow-0 sm:justify-normal'>
@@ -35,7 +39,9 @@ export default function Header() {
           <ModeToggle />
         </div>
 
-        <CartButton />
+        <Suspense>
+          <CartButton />
+        </Suspense>
       </div>
     </header>
   );

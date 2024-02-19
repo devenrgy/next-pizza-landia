@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 
+import { Suspense } from 'react';
+
 import PizzaSort from '@/components/pizza-sort';
 
 import { CATEGORIES } from '@/constants';
@@ -39,7 +41,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
             ))}
           </nav>
 
-          <PizzaSort />
+          <Suspense>
+            <PizzaSort />
+          </Suspense>
         </div>
       )}
 

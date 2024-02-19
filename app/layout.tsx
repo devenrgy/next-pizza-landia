@@ -42,7 +42,9 @@ export default function RootLayout({
         >
           <div className='container grid min-h-[calc(100vh-80px)] grid-rows-[min-content_1fr] rounded-xl bg-background px-4 py-6 shadow-lg dark:bg-background xl:px-16'>
             <Header />
-            <main className='mt-10'>{children}</main>
+            <Suspense>
+              <main className='mt-10'>{children}</main>
+            </Suspense>
           </div>
         </ThemeProvider>
       </body>
