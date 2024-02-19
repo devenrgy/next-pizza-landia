@@ -1,4 +1,8 @@
 {
-  "cleanUrls": true,
-  "redirects": [{ "source": "/", "destination": "/all", "permanent": true }]
+  "rewrites": [
+    {
+      "source": "",
+      "destination": "/all"
+    }
+  ]
 }
