@@ -49,7 +49,7 @@ interface Props {
 export default function Page({ params, searchParams }: Props) {
   const title = searchParams?.title ?? '';
   const currentPage = Number(searchParams?.page) ?? 1;
-  const category = useSearchParams().get('category') ?? params.slug;
+  const category = useSearchParams().get('category') || 'all';
   const currentSort = useSearchParams().get('sort') ?? 'rating';
   const [isLoading, setIsLoading] = useState(false);
   const [pizzaData, setPizzaData] = useState<PizzaData | null>(null);
