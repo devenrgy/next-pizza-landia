@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/all"
+      "source": "/",
+      "destination": "/all",
+      "trailingSlash": true
     }
   ]
 }
