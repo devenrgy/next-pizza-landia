@@ -2,7 +2,11 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/^(\\w)",
+      "source": "/",
+      "destination": "/all"
+    },
+    {
+      "source": "",
       "destination": "/all"
     }
   ]
