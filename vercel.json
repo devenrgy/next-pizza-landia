@@ -1,10 +1,4 @@
 {
-  "trailingSlash": true,
   "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/all"
-    }
-  ]
+  "redirects": [{ "source": "/", "destination": "/all", "permanent": true }]
 }
