@@ -14,7 +14,7 @@ export function CartButton() {
   const isWithoutLayout = withoutLayoutArray.includes(pathname);
   return (
     !isWithoutLayout && (
-      <Link className='order-1 sm:order-2' href='/cart'>
+      <Link className='order-1 sm:order-2' href='/cart/'>
         <Button
           className='min-h-12 min-w-36 justify-between px-5 font-bold text-white'
           size='lg'
