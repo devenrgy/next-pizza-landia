@@ -3,6 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Nunito as FontSans } from 'next/font/google';
 
+import { Suspense } from 'react';
+
 import Header from '@/components/header';
 import { ThemeProvider } from '@/components/theme-provider';
 
