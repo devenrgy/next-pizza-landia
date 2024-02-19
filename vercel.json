@@ -1,8 +1,9 @@
 {
   "rewrites": [
     {
-      "source": "",
-      "destination": "/all"
+      "source": "/",
+      "destination": "/all",
+      "permanent": true
     }
   ]
 }
